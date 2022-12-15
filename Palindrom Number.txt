@@ -1,35 +1,32 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     
-    int n,r,temp,sum=0;
+    int n,r,rev=0,temp;
     
-    printf("Enter any number: ");
+    printf("Enter any number:");
     scanf("%d",&n);
     
     temp=n;
     
-    while(n>0)
+    while(n!=0)
     {
         r=n%10;
-        sum=(sum*10)+r;
+        rev=rev*10+r;
         n=n/10;
-        
     }
+    temp=rev;
     
-    if(temp==sum)
+    if(temp==rev)
     {
-        printf("Number is palindrom");
-        
+        printf(" number is palindrom");
     }
     else 
     {
-        printf("Number is not palindrom");
+        printf(" no is not palindrom");
     }
-  
+    
     return 0;
 }
-
 
 output=  Number is palindrom or not
